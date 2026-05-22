@@ -8,4 +8,4 @@ const calcular = (a, b, operacion) => operacion(a, b);
 
 const sumar = (x, y) => x + y;
 
-console.log(calcular(2, 3, sumar))
+console.log(calcular(2, 3, sumar));

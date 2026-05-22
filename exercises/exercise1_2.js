@@ -1,3 +1,5 @@
+// Exercises 1 and 2
+
 function interpreter(input) {
   var valueType = typeof input;
 
