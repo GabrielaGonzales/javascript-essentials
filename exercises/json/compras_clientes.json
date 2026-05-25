@@ -1,0 +1,128 @@
+[
+  {
+    "clienteId": "C-001",
+    "nombre": "Ana Martínez",
+    "correo": "ana.mtz@email.com",
+    "compras": [
+      {
+        "producto": "Auriculares Inalámbricos",
+        "precioUnitario": 59.99,
+        "cantidad": 2,
+        "descuento": 0.10
+      },
+      {
+        "producto": "Teclado Mecánico",
+        "precioUnitario": 85.00,
+        "cantidad": 1,
+        "descuento": 0.0
+      },
+      {
+        "producto": "Mouse Pad Gamer",
+        "precioUnitario": 15.50,
+        "cantidad": 3,
+        "descuento": 0.20
+      }
+    ]
+  },
+  {
+    "clienteId": "C-002",
+    "nombre": "Carlos Mendoza",
+    "correo": "carlos.m@email.com",
+    "compras": [
+      {
+        "producto": "Monitor 24 pulgadas",
+        "precioUnitario": 149.99,
+        "cantidad": 1,
+        "descuento": 0.15
+      },
+      {
+        "producto": "Cargador USB-C",
+        "precioUnitario": 25.00,
+        "cantidad": 2,
+        "descuento": 0.05
+      }
+    ]
+  },
+  {
+    "clienteId": "C-003",
+    "nombre": "Elena Gómez",
+    "correo": "elena.g@email.com",
+    "compras": [
+      {
+        "producto": "Soporte de Escritorio",
+        "precioUnitario": 12.00,
+        "cantidad": 5,
+        "descuento": 0.0
+      },
+      {
+        "producto": "Lámpara LED Inteligente",
+        "precioUnitario": 45.00,
+        "cantidad": 1,
+        "descuento": 0.25
+      }
+    ]
+  },
+  {
+    "clienteId": "C-004",
+    "nombre": "David Flores",
+    "correo": "david.f@email.com",
+    "compras": [
+      {
+        "producto": "Silla Ergonómica",
+        "precioUnitario": 189.90,
+        "cantidad": 1,
+        "descuento": 0.12
+      },
+      {
+        "producto": "Cargador Inalámbrico",
+        "precioUnitario": 19.99,
+        "cantidad": 1,
+        "descuento": 0.0
+      }
+    ]
+  },
+  {
+    "clienteId": "C-005",
+    "nombre": "Lucía Prados",
+    "correo": "lucia.p@email.com",
+    "compras": [
+      {
+        "producto": "Micrófono USB Condensador",
+        "precioUnitario": 75.50,
+        "cantidad": 1,
+        "descuento": 0.08
+      },
+      {
+        "producto": "Brazo Articulado",
+        "precioUnitario": 32.00,
+        "cantidad": 1,
+        "descuento": 0.0
+      },
+      {
+        "producto": "Filtro Anti-pop",
+        "precioUnitario": 9.99,
+        "cantidad": 2,
+        "descuento": 0.0
+      }
+    ]
+  },
+  {
+    "clienteId": "C-006",
+    "nombre": "Jorge Rossi",
+    "correo": "jorge.r@email.com",
+    "compras": [
+      {
+        "producto": "Disco Duro Externo 2TB",
+        "precioUnitario": 89.00,
+        "cantidad": 2,
+        "descuento": 0.0
+      },
+      {
+        "producto": "Memoria USB 64GB",
+        "precioUnitario": 14.25,
+        "cantidad": 4,
+        "descuento": 0.15
+      }
+    ]
+  }
+]
