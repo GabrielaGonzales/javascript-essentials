@@ -12,35 +12,39 @@ const emptyBook = {
 
 export function BookForm(book = emptyBook) {
   return `
-    <form id="book-form" data-book-id="${book.id || ""}">
+    <form id="book-form" data-book-id="${book.id || ""}" autocomplete="off">
       <h2>${book.id ? "Editar libro" : "Nuevo libro"}</h2>
 
       <label>Titulo</label>
-      <input id="title" value="${book.title || ""}" required />
+      <input id="title" name="title" value="${book.title || ""}" required />
 
       <label>Descripcion</label>
-      <textarea id="description" required>${book.description || ""}</textarea>
+      <textarea id="description" name="description" required>${book.description || ""}</textarea>
 
       <label>Autor</label>
-      <input id="author" value="${book.author || ""}" required />
+      <input id="author" name="author" value="${book.author || ""}" required />
 
       <label>Categoria</label>
-      <input id="category" value="${book.category || ""}" required />
+      <input id="category" name="category" value="${book.category || ""}" required />
 
       <label>Idioma</label>
-      <input id="language" value="${book.language || ""}" required />
+      <input id="language" name="language" value="${book.language || ""}" required />
+      <br/>
 
       <label>Anio</label>
-      <input id="year" type="number" min="0" value="${book.year || ""}" required />
+      <input id="year" name="year" type="number" min="0" value="${book.year || ""}" required />
+      <br/>
 
       <label>Editorial</label>
-      <input id="publisher" value="${book.publisher || ""}" required />
+      <input id="publisher" name="publisher" value="${book.publisher || ""}" required />
+      <br/>
 
       <label>Precio</label>
-      <input id="price" type="number" min="0" step="0.01" value="${book.price || ""}" required />
+      <input id="price" name="price" type="number" min="0" value="${book.price || ""}" required />
+      <br/>
 
       <label>Moneda</label>
-      <select id="currency">
+      <select id="currency" name="currency">
         <option value="USD" ${book.currency === "USD" ? "selected" : ""}>USD</option>
         <option value="BOB" ${book.currency === "BOB" ? "selected" : ""}>BOB</option>
         <option value="EUR" ${book.currency === "EUR" ? "selected" : ""}>EUR</option>

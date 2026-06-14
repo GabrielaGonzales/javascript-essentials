@@ -6,15 +6,18 @@ export function BookList(books, showActions = false) {
   const cards = books.map(book => `
     <article class="card">
       <h3>${book.title}</h3>
-      <p class="muted">${book.author} | ${book.category} | ${book.language}</p>
+      <p><strong>Autor:</strong> ${book.author}</p>
+      <p><strong>Categoria:</strong> ${book.category}</p>
+      <p><strong>Idioma:</strong> ${book.language}</p>
       <p>${book.description}</p>
-      <p>${book.publisher}, ${book.year}</p>
+      <p><strong>Editorial:</strong> ${book.publisher}</p>
+      <p><strong>Anio:</strong> ${book.year}</p>
       <p class="price">${book.currency} ${Number(book.price).toFixed(2)}</p>
       <div class="actions">
         <a href="/books/${book.id}" data-linked>Ver detalle</a>
         ${showActions ? `
-          <button data-edit-book="${book.id}">Editar</button>
-          <button class="danger" data-delete-book="${book.id}">Eliminar</button>
+          <button type="button" data-edit-book="${book.id}">Editar</button>
+          <button type="button" class="danger" data-delete-book="${book.id}">Eliminar</button>
         ` : ""}
       </div>
     </article>

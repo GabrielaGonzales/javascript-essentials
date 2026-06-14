@@ -6,17 +6,19 @@ import { BookList } from "../components/BookList.js";
 let isSubscribed = false;
 let editingBook = null;
 
-function getBookFromForm() {
+function getBookFromForm(form) {
+  const formData = new FormData(form);
+
   return {
-    title: document.getElementById("title").value,
-    description: document.getElementById("description").value,
-    author: document.getElementById("author").value,
-    category: document.getElementById("category").value,
-    language: document.getElementById("language").value,
-    year: Number(document.getElementById("year").value),
-    publisher: document.getElementById("publisher").value,
-    price: Number(document.getElementById("price").value),
-    currency: document.getElementById("currency").value
+    title: formData.get("title"),
+    description: formData.get("description"),
+    author: formData.get("author"),
+    category: formData.get("category"),
+    language: formData.get("language"),
+    year: Number(formData.get("year")),
+    publisher: formData.get("publisher"),
+    price: Number(formData.get("price")),
+    currency: formData.get("currency")
   };
 }
 
@@ -43,11 +45,11 @@ export function ManageBooks() {
 
       try {
         if (editingBook) {
-          await api.updateBook(editingBook.id, getBookFromForm());
+          await api.updateBook(editingBook.id, getBookFromForm(form));
           editingBook = null;
           store.setMessage("Libro actualizado");
         } else {
-          await api.createBook(getBookFromForm());
+          await api.createBook(getBookFromForm(form));
           store.setMessage("Libro creado");
         }
 

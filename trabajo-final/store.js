@@ -1,6 +1,7 @@
 export const store = {
   state: {
     books: [],
+    search: "",
     selectedBook: null,
     token: localStorage.getItem("token"),
     user: JSON.parse(localStorage.getItem("user") || "null"),
@@ -21,6 +22,10 @@ export const store = {
   setBooks(books) {
     this.state.books = books;
     this.notify();
+  },
+
+  setSearch(search) {
+    this.state.search = search;
   },
 
   setSelectedBook(book) {
